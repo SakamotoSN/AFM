@@ -50,20 +50,12 @@ if (message.author.bot) return; //le bot ne peu pas prendre ces message
           })}
   
     if ( (texte.toLowerCase()) === ('oui') || (texte.toLowerCase()) === ('oui?') || (texte.toLowerCase()) === ('oui!') || (texte.toLowerCase()) === ('oui.') ){
-      if(texte.length > 2000){
-        message.channel.send(`${message}`, {
-          files: [
-            "./folder/stiti.mp4"
-          ]
-      }
-      )
-    }
-  }else{
         message.channel.send(`> "${message}" ${message.author} `, {
             files: [
               "./folder/stiti.mp4"
             ]
           })}
   }
+  
  }
 )
