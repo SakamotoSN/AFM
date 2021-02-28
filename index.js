@@ -68,7 +68,7 @@ if (message.author.bot) return; //le bot ne peu pas prendre ces message
           })
         
         }else{
-          message.channel.send(`${message}`, {
+          message.channel.send(`Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension${message.author}`, {
             files: [
               "./folder/stiti.mp4"
             ]
