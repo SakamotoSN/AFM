@@ -36,19 +36,18 @@ if (message.author.bot) return; //le bot ne peu pas prendre ces message
     
   if ( (texte.toLowerCase()) === ('quoi') || (texte.toLowerCase()) === ('quoi?') || (texte.toLowerCase()) === ('quoi!') || (texte.toLowerCase()) === ('quoi.') ){
     if ((message.length) > 1000){
-      //console.log("sa marche ici")
-      //message.channel.send(`Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}`, {
-        console.log(`Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}`)
-        //files: [
-          //"./folder/feur.mp4"
-        //]
-      //})}
-      //else{
-        //message.channel.send(`> "${message}" ${message.author} `, {
-          //files: [
-            //"./folder/feur.mp4"
-          //]
-        //})
+      console.log(message.author)
+      message.channel.send(`Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}`, {
+        files: [
+          "./folder/feur.mp4"
+        ]
+      })}
+      else{
+        message.channel.send(`> "${message}" ${message.author} `, {
+          files: [
+            "./folder/feur.mp4"
+          ]
+        })
 
       }
     }
