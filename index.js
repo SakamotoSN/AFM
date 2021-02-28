@@ -35,8 +35,7 @@ if (message.author.bot) return; //le bot ne peu pas prendre ces message
   }else{
     
   if ( (texte.toLowerCase()) === ('quoi') || (texte.toLowerCase()) === ('quoi?') || (texte.toLowerCase()) === ('quoi!') || (texte.toLowerCase()) === ('quoi.') ){
-    console.log((message.length + message.author.length))
-    if ((message.length) > 1000){
+    if ((message.length) < 1000){
       //console.log("sa marche ici")
       message.channel.send(`Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}`, {
         files: [
