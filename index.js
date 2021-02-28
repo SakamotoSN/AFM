@@ -34,7 +34,7 @@ if (message.author.bot) return; //le bot ne peu pas prendre ces message
       return;
   }else{
     
-  if ( (texte.toLowerCase()) === ('quoi') || (texte.toLowerCase()) === ('quoi?') || (texte.toLowerCase()) === ('quoi!') || (texte.toLowerCase()) === ('quoi.') || ('pourquoi') || (texte.toLowerCase()) === ('pourquoi?') || (texte.toLowerCase()) === ('pourquoi!') || (texte.toLowerCase()) === ('pourquoi.') ){
+  if ( (texte.toLowerCase()).includes("quoi")){ //=== ('quoi') || (texte.toLowerCase()) === ('quoi?') || (texte.toLowerCase()) === ('quoi!') || (texte.toLowerCase()) === ('quoi.') || ('pourquoi') || (texte.toLowerCase()) === ('pourquoi?') || (texte.toLowerCase()) === ('pourquoi!') || (texte.toLowerCase()) === ('pourquoi.') ){
     if ((message.content.length) > 1000){
       message.channel.send(`Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}`, {
         files: [
