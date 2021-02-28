@@ -35,8 +35,7 @@ if (message.author.bot) return; //le bot ne peu pas prendre ces message
   }else{
     
   if ( (texte.toLowerCase()) === ('quoi') || (texte.toLowerCase()) === ('quoi?') || (texte.toLowerCase()) === ('quoi!') || (texte.toLowerCase()) === ('quoi.') ){
-    if ((message.length) > 1000){
-      console.log(message.author)
+    if ((message.content.length) > 1000){
       message.channel.send(`Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}`, {
         files: [
           "./folder/feur.mp4"
