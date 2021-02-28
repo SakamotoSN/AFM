@@ -6,7 +6,7 @@ var prefix = ("m!")
 
 bot.on('ready', function() {
     bot.user.setUsername("Quoifeur bot")
-    bot.user.setPresence({ game: { name: 'Quoiffer les client'}, status: 'dnd'}) //en ligne;
+    bot.user.setActivity("Quoiffer les client")
     console.log("Connected")
 });
 
