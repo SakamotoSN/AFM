@@ -61,7 +61,7 @@ if (message.author.bot) return; //le bot ne peu pas prendre ces message
 
 
     if ( (texte.toLowerCase()) === ('non') || (texte.toLowerCase()) === ('non?') || (texte.toLowerCase()) === ('non!') || (texte.toLowerCase()) === ('non.') ){
-      if (message.length > 1000){
+      if (message.content.length > 1000){
         message.channel.send(`Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}`, {
             files: [
               "./folder/bril.mp4"
@@ -82,7 +82,7 @@ if (message.author.bot) return; //le bot ne peu pas prendre ces message
 
     
       if ( (texte.toLowerCase()) === ('oui') || (texte.toLowerCase()) === ('oui?') || (texte.toLowerCase()) === ('oui!') || (texte.toLowerCase()) === ('oui.') ){
-      if (message.length > 1000){
+      if (message.content.length > 1000){
         message.channel.send(`Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}`, {
             files: [
               "./folder/stiti.mp4"
