@@ -52,7 +52,7 @@ if (message.author.bot) return; //le bot ne peu pas prendre ces message
     if ( (texte.toLowerCase()) === ('oui') || (texte.toLowerCase()) === ('oui?') || (texte.toLowerCase()) === ('oui!') || (texte.toLowerCase()) === ('oui.') ){
         message.channel.send(`> "${message}" ${message.author} `, {
             files: [
-              "./stiti/feur.mp4"
+              "./folder/stiti.mp4"
             ]
           })}
   }
