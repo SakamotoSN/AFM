@@ -45,7 +45,7 @@ if (message.author.bot) return; //le bot ne peu pas prendre ces message
       else{
         message.channel.send(`"Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}`, {
           files: [
-            "./folder/bril.mp4"
+            "./folder/feur.mp4"
           ]
         })
 
