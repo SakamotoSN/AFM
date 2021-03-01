@@ -29,7 +29,7 @@ bot.on('message', message => {
 }
 
   if(message.content === "Quoibot Off"){
-    if(OnOff = false){
+    if(OnOff = true){
     if("234368202379886593".includes(message.author.id)){
       OnOff = false
       message.react('❌');
