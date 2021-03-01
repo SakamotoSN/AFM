@@ -5,6 +5,7 @@ var statue = "idle" //online
 var OnOff = false;
 bot.on('ready', function() {
   bot.user.setPresence({ game: { name: 'Quoiffer les client'}, status: `${statue}`})
+  let myRole = message.guild.roles.cache.get("459383622533775360");
     bot.user.setUsername("Quoifeur bot")
     console.log("Connected")
 });
@@ -16,7 +17,7 @@ bot.login(process.env.DISCORD_TOKEN);
 bot.on('message', message => {
 
  if(message.content === "Quoibot On"){
-  if("234368202379886593".includes(message.author.id)){
+  if("234368202379886593".includes(message.author.id) || message.member.roles.cache.has(role.id)){
     OnOff = true;
     message.react('✅')
   }else{
