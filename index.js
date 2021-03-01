@@ -20,8 +20,9 @@ bot.on('message', message => {
   if("234368202379886593".includes(message.author.id)){
     var OnOff = true
     var statue = "online" //online
+    message.react(':white_check_mark:');
   }else{
-    message.channel.send("non WL")
+    message.react(':no_entry:');
   }
 }
 
@@ -29,8 +30,9 @@ bot.on('message', message => {
     if("234368202379886593".includes(message.author.id)){
       var OnOff = false
       var statue = "idle" //online
+      message.react(':x:');
     }else{
-      message.channel.send("non WL")
+      message.react(':no_entry:');
     }
   }
 
