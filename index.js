@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const client = new Discord.Client();
 var statue = "idle" //online
-var OnOff = true;
+var OnOff = false;
 bot.on('ready', function() {
   bot.user.setPresence({ game: { name: 'Quoiffer les client'}, status: `${statue}`})
     bot.user.setUsername("Quoifeur bot")
@@ -18,26 +18,26 @@ bot.on('message', message => {
 //  if(message.content === "Quoibot On"){
 //    if(OnOff = false){
 //   if("234368202379886593".includes(message.author.id)){
-//     OnOff = true;
-//     message.react('✔️');
+//     OnOff = true
+//     message.react('✔️')
 //   }else{
-//     message.react('⛔');
+//     message.react('⛔')
 //   }
 // }else{
-//   message.react('❎');
+//   message.react('❎')
 // }
 // }
 
   if(message.content === "Quoibot Off"){
     if(OnOff = false){
     if("234368202379886593".includes(message.author.id)){
-      OnOff = true;
-      message.react('❌');
+      OnOff = true
+      message.react('❌')
     }else{
-      message.react('⛔');
+      message.react('⛔')
     }
   }else{
-    message.react('❎');
+    message.react('❎')
   }
 }
 
