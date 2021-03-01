@@ -56,7 +56,7 @@ bot.on('message', message => {
 
 
         console.log("passage !")
-    if ( (texte.toLowerCase()).includes("quoi", (texte.lenght-4) ) ||  (texte.toLowerCase()).includes("quoi.", (texte.lenght-5) ) ||  (texte.toLowerCase()).includes("quoi?", (texte.lenght-5) )||  (texte.toLowerCase()).includes("quoi!", (texte.lenght-5) )){
+    if ( (texte.toLowerCase()).includes("quoi", (texte.lenght) ) ||  (texte.toLowerCase()).includes("quoi.", (texte.lenght) ) ||  (texte.toLowerCase()).includes("quoi?", (texte.lenght) )||  (texte.toLowerCase()).includes("quoi!", (texte.lenght) )){
     if ((message.content.length) > 200){
       message.channel.send('```Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}```', {
         files: [
@@ -72,7 +72,7 @@ bot.on('message', message => {
 
       }
     }
-    if ( (texte.toLowerCase()).includes("non", (texte.lenght-3) ) ||  (texte.toLowerCase()).includes("non.", (texte.lenght-4) ) ||  (texte.toLowerCase()).includes("non?", (texte.lenght-4) )||  (texte.toLowerCase()).includes("non!", (texte.lenght-4) )){
+    if ( (texte.toLowerCase()).includes("non", (texte.lenght) ) ||  (texte.toLowerCase()).includes("non.", (texte.lenght) ) ||  (texte.toLowerCase()).includes("non?", (texte.lenght) )||  (texte.toLowerCase()).includes("non!", (texte.lenght) )){
       if (message.content.length > 200){
         message.channel.send(`Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}`, {
             files: [
@@ -88,7 +88,7 @@ bot.on('message', message => {
 
         }
       }
-      if ( (texte.toLowerCase()).includes("oui", (texte.lenght-3) ) ||  (texte.toLowerCase()).includes("oui.", (texte.lenght-4) ) ||  (texte.toLowerCase()).includes("oui?", (texte.lenght-4) )||  (texte.toLowerCase()).includes("oui!", (texte.lenght-4) )){
+      if ( (texte.toLowerCase()).includes("oui", (texte.lenght-3) ) ||  (texte.toLowerCase()).includes("oui.", (texte.lenght) ) ||  (texte.toLowerCase()).includes("oui?", (texte.lenght) )||  (texte.toLowerCase()).includes("oui!", (texte.lenght) )){
       if (message.content.length > 200){
         message.channel.send('```Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}```', {
             files: [
