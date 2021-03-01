@@ -19,7 +19,7 @@ bot.on('message', message => {
  if(message.content === "Quoibot On"){
   if("234368202379886593".includes(message.author.id)){
     var OnOff = true
-    var statue = online //online
+    var statue = "online" //online
   }else{
     message.channel.send("non WL")
   }
@@ -28,7 +28,7 @@ bot.on('message', message => {
   if(message.content === "Quoibot Off"){
     if("234368202379886593".includes(message.author.id)){
       var OnOff = false
-      var statue = idle //online
+      var statue = "idle" //online
     }else{
       message.channel.send("non WL")
     }
