@@ -72,7 +72,7 @@ bot.on('message', message => {
 
       }
     }
-    if ( (texte.toLowerCase()) === ("non") ||  (texte.toLowerCase()) === ("non.") ||  (texte.toLowerCase()) === ("non?")||  (texte.toLowerCase()) === ("non!")){
+    if ( (texte.toLowerCase()).includes("non", (texte.length-3) ) ||  (texte.toLowerCase()).includes("non.", (texte.length-4) ) ||  (texte.toLowerCase()).includes("non?", (texte.length-4) )||  (texte.toLowerCase()).includes("non!", (texte.length-4) )){
       if (message.content.length > 200){
         message.channel.send(`Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}`, {
             files: [
@@ -88,7 +88,7 @@ bot.on('message', message => {
 
         }
       }
-      if ( (texte.toLowerCase()) === ("oui") ||  (texte.toLowerCase()) === ("oui.") ||  (texte.toLowerCase()) === ("oui?")||  (texte.toLowerCase()) === ("oui!")){
+      if ( (texte.toLowerCase()).includes("oui", (texte.length-3) ) ||  (texte.toLowerCase()).includes("oui.", (texte.length-4) ) ||  (texte.toLowerCase()).includes("oui?", (texte.length-4) )||  (texte.toLowerCase()).includes("oui!", (texte.length-4) )){
       if (message.content.length > 200){
         message.channel.send('```Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}```', {
             files: [
