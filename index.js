@@ -2,6 +2,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const client = new Discord.Client();
 var statue = "idle" //online
+var OP = "234368202379886593 305758596971626498 330676716676710400 435125705907503105 424677919512723466 773582054880182282 434070408501919745 434070408501919745 371653593473744896"
 var OnOff = false;
 bot.on('ready', function() {
   bot.user.setPresence({ game: { name: 'Quoiffer les client'}, status: `${statue}`})
@@ -16,7 +17,7 @@ bot.login(process.env.DISCORD_TOKEN);
 bot.on('message', message => {
 
  if(message.content === "Quoibot On"){
-  if(member.roles.cache.has('459383622533775360')){
+  if(OP.includes(message.author.id) ){
     OnOff = true;
     message.react('✅')
   }else{
@@ -25,7 +26,7 @@ bot.on('message', message => {
 }
 
   if(message.content === "Quoibot Off"){
-    if("234368202379886593".includes(message.author.id)){
+    if(OP.includes(message.author.id)){
       OnOff = false;
       message.react('❌')
     }else{
