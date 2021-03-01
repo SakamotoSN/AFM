@@ -58,7 +58,7 @@ bot.on('message', message => {
 
     }else{
       console.log("pas de everyone")
-      if(OnOff == true){
+      //if(OnOff == true){
         console.log("passage !")
     if ( (texte.toLowerCase()).includes("quoi", (texte.lenght-4) ) ||  (texte.toLowerCase()).includes("quoi.", (texte.lenght-5) ) ||  (texte.toLowerCase()).includes("quoi?", (texte.lenght-5) )||  (texte.toLowerCase()).includes("quoi!", (texte.lenght-5) )){
     if ((message.content.length) > 200){
@@ -107,10 +107,10 @@ bot.on('message', message => {
           })
         }
   }
-}else{
-  console.log("return")
-  return;}
+}//else{
+  //console.log("return")
+  //return;}
 }
 }
-}
+//}
 )
