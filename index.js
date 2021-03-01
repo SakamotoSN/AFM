@@ -34,7 +34,7 @@ bot.on('message', message => {
   }
 
 
-
+  if(OnOff === true){
   if (message.author.bot) return; //le bot ne peu pas prendre ces message
     let test = message.content.split(" ");
   console.log(`entrer ${test}`)
@@ -55,9 +55,6 @@ bot.on('message', message => {
 
     }else{
       console.log("pas de everyone")
-
-
-      if(OnOff === false){
 
 
         console.log("passage !")
@@ -110,6 +107,8 @@ bot.on('message', message => {
   }
 }
 }
+}else{
+  console.log("pas actif")
 }
 }
 )
