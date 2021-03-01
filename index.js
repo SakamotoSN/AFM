@@ -52,7 +52,6 @@ bot.on('message', message => {
      return;
 
     }else{
-      if(OnOff === true){
       console.log("pas de everyone")
 
 
@@ -104,9 +103,6 @@ bot.on('message', message => {
           })
         }
   }
-}else{
-  console.log("pas actif")
-}
 }
 }
 }
