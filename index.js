@@ -16,7 +16,7 @@ bot.login(process.env.DISCORD_TOKEN);
 
 bot.on('message', message => {
 
- if(message.content === "Quoibot On"){
+ if(message.content === "Quoiffeurbot On"){
   if(OP.includes(message.author.id) ){
     OnOff = true;
     message.react('✅')
@@ -25,7 +25,7 @@ bot.on('message', message => {
   }
 }
 
-  if(message.content === "Quoibot Off"){
+  if(message.content === "Quoiffeurbot Off"){
     if(OP.includes(message.author.id)){
       OnOff = false;
       message.react('❌')
