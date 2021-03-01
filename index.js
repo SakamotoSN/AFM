@@ -46,27 +46,27 @@ bot.on('message', message => {
 if (OnOff === true){
   if (message.author.bot) return; //le bot ne peu pas prendre ces message
     let test = message.content.split(" ");
-  console.log(`entrer ${test}`)
+  //console.log(`entrer ${test}`)
   var texte = test[test.length - 1];
-  console.log(`dernier mot : ${texte}`) //prend que le dernier mots
+  //console.log(`dernier mot : ${texte}`) //prend que le dernier mots
   if((texte === ('?')) || (texte === ('!')) ||(texte === ('.') )){
     var texte = test[test.length - 2];
-    console.log("un ? a etais detecter dans le code" )
-    console.log(texte)
+    //console.log("un ? a etais detecter dans le code" )
+    //console.log(texte)
   } //si un ? est le dernier mots prend avant dernier
     if (texte === undefined) {
       return;
   }else{
 
     if (message.content.includes("@everyone")){
-      console.log("Everyone dedected")
+      //console.log("Everyone dedected")
      return;
 
     }else{
-      console.log("pas de everyone")
+      //console.log("pas de everyone")
 
 
-        console.log("passage !")
+        //console.log("passage !")
     if ( (texte.toLowerCase()).includes("quoi", (texte.length-4) ) ||  (texte.toLowerCase()).includes("quoi.", (texte.length-5) ) ||  (texte.toLowerCase()).includes("quoi?", (texte.length-5) )||  (texte.toLowerCase()).includes("quoi!", (texte.length-5) )){
     if ((message.content.length) > 200){
       message.channel.send('```Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}```', {
@@ -116,7 +116,7 @@ if (OnOff === true){
   }
 }
 }
-}else{console.log("OFF") 
+}else{//console.log("OFF") 
 return;}
 }
 )
