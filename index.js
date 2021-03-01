@@ -52,7 +52,7 @@ if(OnOff = true){
       return;
   }else{
 
-    if (message.content === "@everyone"){
+    if (message.content.includes("@everyone")){
      return;
 
     }else{
