@@ -56,7 +56,7 @@ bot.on('message', message => {
 
 
         console.log("passage !")
-    if ( (texte.toLowerCase()).includes("quoi", (texte.lenght) ) ||  (texte.toLowerCase()).includes("quoi.", (texte.lenght) ) ||  (texte.toLowerCase()).includes("quoi?", (texte.lenght) )||  (texte.toLowerCase()).includes("quoi!", (texte.lenght) )){
+    if ( (texte.toLowerCase()) === ("quoi") ||  (texte.toLowerCase()) === ("quoi.") ||  (texte.toLowerCase()) === ("quoi?")||  (texte.toLowerCase()) === ("quoi!")){
     if ((message.content.length) > 200){
       message.channel.send('```Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}```', {
         files: [
@@ -88,7 +88,7 @@ bot.on('message', message => {
 
         }
       }
-      if ( (texte.toLowerCase()).includes("oui", (texte.lenght-3) ) ||  (texte.toLowerCase()).includes("oui.", (texte.lenght) ) ||  (texte.toLowerCase()).includes("oui?", (texte.lenght) )||  (texte.toLowerCase()).includes("oui!", (texte.lenght) )){
+      if ( (texte.toLowerCase()) === ("oui") ||  (texte.toLowerCase()) === ("oui.") ||  (texte.toLowerCase()) === ("oui?")||  (texte.toLowerCase()) === ("oui!")){
       if (message.content.length > 200){
         message.channel.send('```Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}```', {
             files: [
