@@ -34,7 +34,7 @@ if (message.author.bot) return; //le bot ne peu pas prendre ces message
       return;
   }else{
     
-    if ( (texte.toLowerCase()).includes("quoi", (texte.lenght-5) )){
+    if ( (texte.toLowerCase()).includes("quoi", (texte.lenght-6) )){
     if ((message.content.length) > 1000){
       message.channel.send(`Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}`, {
         files: [
@@ -60,7 +60,7 @@ if (message.author.bot) return; //le bot ne peu pas prendre ces message
 
 
 
-    if ( (texte.toLowerCase()).includes("non", (texte.lenght-4) )){
+    if ( (texte.toLowerCase()).includes("non", (texte.lenght-5) )){
       if (message.content.length > 1000){
         message.channel.send(`Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}`, {
             files: [
@@ -81,7 +81,7 @@ if (message.author.bot) return; //le bot ne peu pas prendre ces message
 
 
     
-      if ( (texte.toLowerCase()).includes("oui", (texte.lenght-4) )){
+      if ( (texte.toLowerCase()).includes("oui", (texte.lenght-5) )){
       if (message.content.length > 1000){
         message.channel.send(`Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}`, {
             files: [
