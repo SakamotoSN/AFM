@@ -3,6 +3,7 @@ const bot = new Discord.Client();
 const client = new Discord.Client();
 var prefix = ("m!")
 var statue = idle //online
+var OnOff = false
 bot.on('ready', function() {
   bot.user.setPresence({ game: { name: 'Quoiffer les client'}, status: `${statue}`})
     bot.user.setUsername("Quoifeur bot")
@@ -14,7 +15,6 @@ bot.login(process.env.DISCORD_TOKEN);
 
 
 bot.on('message', message => {
- var OnOff = false
 
  if(message.content === "Quoibot On"){
   if("234368202379886593".includes(message.author.id)){
