@@ -35,7 +35,7 @@ bot.on('message', message => {
   }
 
 
-if(OnOff = true){
+if(OnOff === true){
 
 
   if (message.author.bot) return; //le bot ne peu pas prendre ces message
@@ -104,9 +104,7 @@ if(OnOff = true){
         }
   }
 }
-  }
-
-
 }
+}else return;
 }
 )
