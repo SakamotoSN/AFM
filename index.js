@@ -17,7 +17,7 @@ bot.on('message', message => {
 
  if(message.content === "Quoibot On"){
   if("234368202379886593".includes(message.author.id)){
-    onOff = true
+    OnOff = true
     message.react('✔️');
   }else{
     message.react('⛔');
@@ -26,13 +26,13 @@ bot.on('message', message => {
 
   if(message.content === "Quoibot Off"){
     if("234368202379886593".includes(message.author.id)){
-      onOff = false
+      OnOff = false
       message.react('❌');
     }else{
       message.react('⛔');
     }
   }
-
+if (OnOff === true){
   if (message.author.bot) return; //le bot ne peu pas prendre ces message
     let test = message.content.split(" ");
   console.log(`entrer ${test}`)
@@ -105,5 +105,7 @@ bot.on('message', message => {
   }
 }
 }
+}else{console.log("OFF") 
+return;}
 }
 )
