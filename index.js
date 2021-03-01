@@ -18,7 +18,6 @@ bot.on('message', message => {
  if(message.content === "Quoibot On"){
   if("234368202379886593".includes(message.author.id)){
     onOff = true
-    var statue = "online" //online
     message.react('✔️');
   }else{
     message.react('⛔');
@@ -28,7 +27,6 @@ bot.on('message', message => {
   if(message.content === "Quoibot Off"){
     if("234368202379886593".includes(message.author.id)){
       onOff = false
-      var statue = "idle" //online
       message.react('❌');
     }else{
       message.react('⛔');
@@ -57,7 +55,11 @@ bot.on('message', message => {
 
     }else{
       console.log("pas de everyone")
+
+
       if(OnOff === true){
+
+
         console.log("passage !")
     if ( (texte.toLowerCase()).includes("quoi", (texte.lenght-4) ) ||  (texte.toLowerCase()).includes("quoi.", (texte.lenght-5) ) ||  (texte.toLowerCase()).includes("quoi?", (texte.lenght-5) )||  (texte.toLowerCase()).includes("quoi!", (texte.lenght-5) )){
     if ((message.content.length) > 200){
@@ -106,7 +108,7 @@ bot.on('message', message => {
           })
         }
   }
-}else{console.log("pas actif")}
+}
 }
 }
 }
