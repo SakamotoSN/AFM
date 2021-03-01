@@ -15,18 +15,16 @@ bot.login(process.env.DISCORD_TOKEN);
 
 bot.on('message', message => {
 
-//  if(message.content === "Quoibot On"){
-//    if(OnOff = false){
-//   if("234368202379886593".includes(message.author.id)){
-//     OnOff = true
-//     message.react('✔️')
-//   }else{
-//     message.react('⛔')
-//   }
-// }else{
-//   message.react('❎')
-// }
-// }
+ if(message.content === "Quoibot On"){
+   if(OnOff = false){
+  if("234368202379886593".includes(message.author.id)){
+    OnOff = true
+    message.react('✅')
+  }else{
+    message.react('⛔')
+  }
+}
+}
 
   if(message.content === "Quoibot Off"){
     if(OnOff = false){
@@ -36,8 +34,6 @@ bot.on('message', message => {
     }else{
       message.react('⛔')
     }
-  }else{
-    message.react('❎')
   }
 }
 
