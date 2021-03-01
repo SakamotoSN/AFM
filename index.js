@@ -18,7 +18,7 @@ bot.on('message', message => {
  if(message.content === "Quoibot On"){
    if(OnOff = false){
   if("234368202379886593".includes(message.author.id)){
-    OnOff = true
+    OnOff = true;
     message.react('✔️');
   }else{
     message.react('⛔');
@@ -31,7 +31,7 @@ bot.on('message', message => {
   if(message.content === "Quoibot Off"){
     if(OnOff = true){
     if("234368202379886593".includes(message.author.id)){
-      OnOff = false
+      OnOff = false;
       message.react('❌');
     }else{
       message.react('⛔');
