@@ -43,7 +43,7 @@ bot.on('message', message => {
   console.log(`entrer ${test}`)
   var texte = test[test.length - 1];
   console.log(`dernier mot : ${texte}`) //prend que le dernier mots
-  if((texte.content('?')) || (texte.content('!')) ||(texte.content('.')) ){
+  if((texte.toLowerCase().includes('?'), (texte.lenght-1) ) || (texte.toLowerCase().includes('!'), (texte.lenght-1) ) ||(texte.toLowerCase().includes('.'), (texte.lenght-1)) ){
     var texte = test[test.length - 2];
     console.log("un ? a etais detecter dans le code" )
     console.log(texte)
