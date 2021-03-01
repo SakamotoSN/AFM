@@ -57,7 +57,7 @@ if(OnOff = true){
         ]
       })}
       else{
-        message.channel.send( `${message} ${message.author}`, {
+        message.channel.send(` ``${message}`` ${message.author} `, {
           files: [
             "./folder/feur.mp4"
           ]
@@ -73,7 +73,7 @@ if(OnOff = true){
             ]
           })}
         else{
-          message.channel.send(`> "${message}" ${message.author} `, {
+          message.channel.send(` ``${message}`` ${message.author} `, {
             files: [
               "./folder/bril.mp4"
             ]
@@ -89,7 +89,7 @@ if(OnOff = true){
             ]
           })
         }else{
-          message.channel.send(` ```${message}``` ${message.author} `, {
+          message.channel.send(` ``${message}`` ${message.author} `, {
             files: [
               "./folder/stiti.mp4"
             ]
