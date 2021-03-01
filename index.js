@@ -17,7 +17,7 @@ bot.on('message', message => {
 
  if(message.content === "Quoibot On"){
   let role = message.guild.roles.cache.get("459383622533775360");
-  if("234368202379886593".includes(message.author.id) || message.member.role.cache.has(role.id)){
+  if(message.member.role.cache.has(role.id)){ //("234368202379886593".includes(message.author.id)
     OnOff = true;
     message.react('✅')
   }else{
