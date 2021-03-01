@@ -56,7 +56,7 @@ bot.on('message', message => {
 
 
         console.log("passage !")
-    if ( (texte.toLowerCase().includes) === ("quoi", (texte.length-4) ) ||  (texte.toLowerCase()).includes("quoi.", (texte.length-5) ) ||  (texte.toLowerCase()).includes("quoi?", (texte.length-5) )||  (texte.toLowerCase()).includes("quoi!", (texte.length-5) )){
+    if ( (texte.toLowerCase().includes) === ("quoi", (texte.length-5) ) ||  (texte.toLowerCase()).includes("quoi.", (texte.length-6) ) ||  (texte.toLowerCase()).includes("quoi?", (texte.length-6) )||  (texte.toLowerCase()).includes("quoi!", (texte.length-6) )){
     if ((message.content.length) > 200){
       message.channel.send('```Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}```', {
         files: [
