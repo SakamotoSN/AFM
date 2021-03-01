@@ -107,7 +107,9 @@ bot.on('message', message => {
           })
         }
   }
-}else{return;}
+}else{
+  console.log("return")
+  return;}
 }
 }
 }
