@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const client = new Discord.Client();
-var prefix = ("m!")
 var statue = "idle" //online
 var OnOff = false;
 bot.on('ready', function() {
@@ -18,7 +17,7 @@ bot.on('message', message => {
 
  if(message.content === "Quoibot On"){
   if("234368202379886593".includes(message.author.id)){
-    var OnOff = true;
+    onOff = true
     var statue = "online" //online
     message.react('✔️');
   }else{
@@ -28,7 +27,7 @@ bot.on('message', message => {
 
   if(message.content === "Quoibot Off"){
     if("234368202379886593".includes(message.author.id)){
-      var OnOff = false;
+      onOff = false
       var statue = "idle" //online
       message.react('❌');
     }else{
@@ -58,7 +57,7 @@ bot.on('message', message => {
 
     }else{
       console.log("pas de everyone")
-      //if(OnOff == true){
+      if(OnOff == true){
         console.log("passage !")
     if ( (texte.toLowerCase()).includes("quoi", (texte.lenght-4) ) ||  (texte.toLowerCase()).includes("quoi.", (texte.lenght-5) ) ||  (texte.toLowerCase()).includes("quoi?", (texte.lenght-5) )||  (texte.toLowerCase()).includes("quoi!", (texte.lenght-5) )){
     if ((message.content.length) > 200){
@@ -107,10 +106,8 @@ bot.on('message', message => {
           })
         }
   }
-}//else{
-  //console.log("return")
-  //return;}
+}else{console.log("pas actif")}
 }
 }
-//}
+}
 )
