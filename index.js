@@ -57,7 +57,7 @@ bot.on('message', message => {
       console.log("pas de everyone")
 
 
-      if(OnOff === true){
+      if(OnOff === false){
 
 
         console.log("passage !")
