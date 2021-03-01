@@ -3,20 +3,25 @@ const bot = new Discord.Client();
 const client = new Discord.Client();
 var prefix = ("m!")
 bot.on('ready', function() {
+  bot.user.setPresence({ game: { name: 'Quoiffer les client'}, status: `${statue}`})
     bot.user.setUsername("Quoifeur bot")
-    bot.user.setActivity("Quoiffer les client")
     console.log("Connected")
 });
+
+
 bot.login(process.env.DISCORD_TOKEN);
+
+
 bot.on('message', message => {
 
 
-
+var statue = idle //online
  var OnOff = false
 
  if(message.content === "Quoibot On"){
   if("234368202379886593".includes(message.author.id)){
     var OnOff = true
+    var statue = online //online
   }else{
     message.channel.send("non WL")
   }
@@ -25,6 +30,7 @@ bot.on('message', message => {
   if(message.content === "Quoibot Off"){
     if("234368202379886593".includes(message.author.id)){
       var OnOff = false
+      var statue = idle //online
     }else{
       message.channel.send("non WL")
     }
