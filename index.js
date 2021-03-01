@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const bot = new Discord.Client();
 const client = new Discord.Client();
 var statue = "idle" //online
-var OnOff = false;
+var OnOff = true;
 bot.on('ready', function() {
   bot.user.setPresence({ game: { name: 'Quoiffer les client'}, status: `${statue}`})
     bot.user.setUsername("Quoifeur bot")
