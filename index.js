@@ -62,7 +62,7 @@ bot.on('message', message => {
           //console.log("passage !")
       if ( (texte.toLowerCase()).includes("quoi", (texte.length-4) ) ||  (texte.toLowerCase()).includes("quoi.", (texte.length-5) ) ||  (texte.toLowerCase()).includes("quoi?", (texte.length-5) )||  (texte.toLowerCase()).includes("quoi!", (texte.length-5) )){
       if ((message.content.length) > 200){
-        message.channel.send('```Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}```', {
+        message.channel.send(`"Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}`, {
           files: [
             "./folder/feur.mp4"
           ]
@@ -78,7 +78,7 @@ bot.on('message', message => {
       }
       if ( (texte.toLowerCase()).includes("non", (texte.length-3) ) ||  (texte.toLowerCase()).includes("non.", (texte.length-4) ) ||  (texte.toLowerCase()).includes("non?", (texte.length-4) )||  (texte.toLowerCase()).includes("non!", (texte.length-4) )){
         if (message.content.length > 200){
-          message.channel.send(`Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}`, {
+          message.channel.send(`"Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}`, {
               files: [
                 "./folder/bril.mp4"
               ]
@@ -94,7 +94,7 @@ bot.on('message', message => {
         }
         if ( (texte.toLowerCase()).includes("oui", (texte.length-3) ) ||  (texte.toLowerCase()).includes("oui.", (texte.length-4) ) ||  (texte.toLowerCase()).includes("oui?", (texte.length-4) )||  (texte.toLowerCase()).includes("oui!", (texte.length-4) )){
         if (message.content.length > 200){
-          message.channel.send('```Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}```', {
+          message.channel.send(`"Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}`, {
               files: [
                 "./folder/stiti.mp4"
               ]
@@ -111,7 +111,7 @@ bot.on('message', message => {
 
           if ( (texte.toLowerCase()).includes("ouais", (texte.length-5) ) ||  (texte.toLowerCase()).includes("ouais.", (texte.length-6) ) ||  (texte.toLowerCase()).includes("ouais?", (texte.length-6) )||  (texte.toLowerCase()).includes("ouais!", (texte.length-6) )   ||      (texte.toLowerCase()).includes("ouai", (texte.length-4) ) ||  (texte.toLowerCase()).includes("ouai.", (texte.length-5) ) ||  (texte.toLowerCase()).includes("ouai?", (texte.length-5) )||  (texte.toLowerCase()).includes("ouai!", (texte.length-5) )   ||   (texte.toLowerCase()).includes("oe", (texte.length-2) ) ||  (texte.toLowerCase()).includes("oe.", (texte.length-3) ) ||  (texte.toLowerCase()).includes("oe?", (texte.length-3) )||  (texte.toLowerCase()).includes("oe!", (texte.length-3) )  ){
             if (message.content.length > 200){
-              message.channel.send('```Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}```', {
+              message.channel.send(`"Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}`, {
                   files: [
                     "./folder/sternn.mp4"
                   ]
@@ -125,24 +125,24 @@ bot.on('message', message => {
               }
             }
    
-          
-
-
-            if ( (texte.toLowerCase()).includes("a", (texte.length-1) ) ||  (texte.toLowerCase()).includes("a.", (texte.length-2) ) ||  (texte.toLowerCase()).includes("a?", (texte.length-2) )||  (texte.toLowerCase()).includes("a!", (texte.length-2) )   ||      (texte.toLowerCase()).includes("ah", (texte.length-2) ) ||  (texte.toLowerCase()).includes("ah.", (texte.length-3) ) ||  (texte.toLowerCase()).includes("ah?", (texte.length-3) )||  (texte.toLowerCase()).includes("ah!", (texte.length-3) )   ||  (texte.toLowerCase()).includes("ha", (texte.length-2) ) ||  (texte.toLowerCase()).includes("ah?", (texte.length-3) )||  (texte.toLowerCase()).includes("ah!", (texte.length-3) )   ||      (texte.toLowerCase()).includes("ha.", (texte.length-2) ) ){
+  
+            if ( (texte.toLowerCase()).includes("a", (texte.length-1) ) ||  (texte.toLowerCase()).includes("a.", (texte.length-2) ) ||  (texte.toLowerCase()).includes("a?", (texte.length-2) )||  (texte.toLowerCase()).includes("a!", (texte.length-2) )){
               if (message.content.length > 200){
-                message.channel.send('```Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}```', {
+                message.channel.send(`"Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}`, {
                     files: [
-                      "./folder/vion.mp4"
+                      "./folder/stiti.mp4"
                     ]
                   })
                 }else{
                   message.channel.send(` "${message}" ${message.author} `, {
                     files: [
-                      "./folder/vion.mp4"
+                      "./folder/stiti.mp4"
                     ]
                   })
                 }
               }
+
+
 
 
 
