@@ -109,17 +109,17 @@ bot.on('message', message => {
         }
 
 
-          if ( (texte.toLowerCase()).includes("ouais", (texte.length-5) ) ||  (texte.toLowerCase()).includes("ouais.", (texte.length-6) ) ||  (texte.toLowerCase()).includes("ouais?", (texte.length-6) )||  (texte.toLowerCase()).includes("ouais", (texte.length-6) )){
+          if ( (texte.toLowerCase()).includes("ouais", (texte.length-5) ) ||  (texte.toLowerCase()).includes("ouais.", (texte.length-6) ) ||  (texte.toLowerCase()).includes("ouais?", (texte.length-6) )||  (texte.toLowerCase()).includes("ouais!", (texte.length-6) )   ||      (texte.toLowerCase()).includes("ouai", (texte.length-4) ) ||  (texte.toLowerCase()).includes("ouai.", (texte.length-5) ) ||  (texte.toLowerCase()).includes("ouai?", (texte.length-5) )||  (texte.toLowerCase()).includes("ouai!", (texte.length-5) )   ||  (texte.toLowerCase()).includes("ouais.", (texte.length-6) ) ||  (texte.toLowerCase()).includes("ouais?", (texte.length-6) )||  (texte.toLowerCase()).includes("ouais!", (texte.length-6) )   ||      (texte.toLowerCase()).includes("oe", (texte.length-2) ) ||  (texte.toLowerCase()).includes("oe.", (texte.length-3) ) ||  (texte.toLowerCase()).includes("oe?", (texte.length-3) )||  (texte.toLowerCase()).includes("oe!", (texte.length-3) )  ){
             if (message.content.length > 200){
               message.channel.send('```Pour éviter de flood le salon nous avons decider de ne pas citer le message, merci de votre compréhension"\n${message.author}```', {
                   files: [
-                    "./folder/stiti.mp4"
+                    "./folder/sternn.mp4"
                   ]
                 })
               }else{
                 message.channel.send(` "${message}" ${message.author} `, {
                   files: [
-                    "./folder/stiti.mp4"
+                    "./folder/sternn.mp4"
                   ]
                 })
               }
