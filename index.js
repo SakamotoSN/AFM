@@ -157,14 +157,11 @@ bot.on('message', message => {
 
 // ...
 
-app = express();
 
-// Schedule tasks to be run on the server.
-cron.schedule('* 42 13 * * *', function() {
-  console.log('done');
+const job = schedule.scheduleJob({hour: 13, minute: 48, dayOfWeek: 0}, function(){
+  console.log('Time for tea!');
 });
 
-app.listen(3000);
 
 
 }
