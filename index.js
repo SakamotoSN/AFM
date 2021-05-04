@@ -13,23 +13,19 @@ bot.on('ready', function() {
 
 bot.login(process.env.DISCORD_TOKEN);
 
-
+const cron = require('cron');
 bot.on('message', message => {
 
-
-
-
-
-  var cron = require('node-cron');
-
-  cron.schedule('*/2 * * * *', () => {
-    console.log('running a task every minute');
+  scheduledMessage.start()
+  let scheduledMessage = new cron.CronJob('00 04 14 * * *', () => {
+    // This runs every day at 10:30:00, you can do anything you want
+console.log("yes")
   });
   
 
 
 
-  
+
   if(message.content === "Quoiffeurbot On"){
     if(OP.includes(message.author.id) ){
       OnOff = true;
