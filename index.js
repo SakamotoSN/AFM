@@ -16,6 +16,20 @@ bot.login(process.env.DISCORD_TOKEN);
 
 bot.on('message', message => {
 
+
+
+
+
+  var cron = require('node-cron');
+
+  cron.schedule('*/2 * * * *', () => {
+    console.log('running a task every minute');
+  });
+  
+
+
+
+  
   if(message.content === "Quoiffeurbot On"){
     if(OP.includes(message.author.id) ){
       OnOff = true;
@@ -154,17 +168,6 @@ bot.on('message', message => {
 
   else{//console.log("OFF") 
   return;}
-
-// ...
-
-
-var cron = require('node-cron');
-
-cron.schedule('*/2 * * * *', () => {
-  console.log('running a task every minute');
-});
-
-
 
 }
 }    
