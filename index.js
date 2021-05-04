@@ -155,9 +155,22 @@ bot.on('message', message => {
   else{//console.log("OFF") 
   return;}
 
+  const schedule = require('node-schedule');
+  const date = new Date(03, 04, 13, 20, 0);
+  rule.tz = 'Etc/UTC';
+  
+  const job = schedule.scheduleJob(date, function(){
+    console.log('The world is going to end today.');
+  });
+
 
 }
 }    
 }
+
+
+
+
+
 }
 )
