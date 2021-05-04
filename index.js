@@ -158,8 +158,10 @@ bot.on('message', message => {
 // ...
 
 
-const job = schedule.scheduleJob({hour: 13, minute: 48, dayOfWeek: 0}, function(){
-  console.log('Time for tea!');
+var cron = require('node-cron');
+
+cron.schedule('* * * * *', () => {
+  console.log('running a task every minute');
 });
 
 
