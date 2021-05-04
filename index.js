@@ -17,7 +17,7 @@ const cron = require('cron');
 bot.on('message', message => {
 
   scheduledMessage.start()
-  let scheduledMessage = new cron.CronJob('00 06 14 * * *', () => {
+  let scheduledMessage = new cron.CronJob('00 11 14 * * *', () => {
     // This runs every day at 10:30:00, you can do anything you want
 console.log("yes")
   });
