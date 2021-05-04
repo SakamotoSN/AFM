@@ -16,11 +16,13 @@ bot.login(process.env.DISCORD_TOKEN);
 const cron = require('cron');
 bot.on('message', message => {
 
-  scheduledMessage.start()
-  let scheduledMessage = new cron.CronJob('* * * * * *', () => {
-    // This runs every day at 10:30:00, you can do anything you want
-console.log("yes")
-  });
+
+
+  var CronJob = require('cron').CronJob;
+  var job = new CronJob('* * * * * *', function() {
+    console.log('You will see this message every second');
+  }, null, true, 'America/Rainy_River');
+  job.start();
   
 
 
