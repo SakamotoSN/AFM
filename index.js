@@ -163,7 +163,7 @@ bot.on('message', message => {
 app = express();
 
 // Schedule tasks to be run on the server.
-cron.schedule('* 37 13 * * *', function() {
+cron.schedule('* 39 13 * * *', function() {
   console.log('done');
 });
 
