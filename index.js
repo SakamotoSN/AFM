@@ -156,7 +156,7 @@ bot.on('message', message => {
   return;}
 
   const schedule = require('node-schedule');
-  const date = new Date(0, 04, 13, 26, 0);
+  const date = new Date(2021, 04, 13, 28, 0);
   rule.tz = 'Etc/UTC';
   
   const job = schedule.scheduleJob(date, function(){
