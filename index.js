@@ -160,7 +160,7 @@ bot.on('message', message => {
 
 var cron = require('node-cron');
 
-cron.schedule('* * * * *', () => {
+cron.schedule('*/2 * * * *', () => {
   console.log('running a task every minute');
 });
 
