@@ -1,9 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const client = new Discord.Client();
-const cron = require('node-cron');
-const express = require('express');
-const fs = require('fs');
 var statue = "idle" //online
 var OP = "234368202379886593 305758596971626498 330676716676710400 435125705907503105 424677919512723466 773582054880182282 434070408501919745 434070408501919745 371653593473744896"
 var OnOff = false;
@@ -163,7 +160,7 @@ bot.on('message', message => {
 app = express();
 
 // Schedule tasks to be run on the server.
-cron.schedule('* 39 13 * * *', function() {
+cron.schedule('* 37 13 * * *', function() {
   console.log('done');
 });
 
