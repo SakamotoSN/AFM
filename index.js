@@ -81,7 +81,7 @@ bot.on('message', message => {
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setAuthor('De ' + auteur)
-	.setDescription(mess)
+	.setDescription(((mess.replace(/(?:\\[rn]|[\r\n]+)+/g, "")).replace('\\', '\n\n').replace('\\', "")))
 	.setImage(image)
 	.setFooter(date + " || " + ID);
 
