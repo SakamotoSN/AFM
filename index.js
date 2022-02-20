@@ -5,7 +5,8 @@ const client = new Discord.Client();
 
 const parse = require('csv-parser');
 const fs = require('fs');
-var csvData = [];
+const csvData = [];
+const csv = JSON.stringify(csvData);
 
 var statue = "idle" //online
 bot.on('ready', function() {
@@ -28,13 +29,13 @@ fs.createReadStream('./folder/Dekuali.csv')
   });
 
 
-  console.log("LOGIN")
+  console.log("LOGIN");
 bot.login(process.env.DISCORD_TOKEN);
 
 bot.on('message', message => {
 
   if(message.content === "!ice-bot NotFunny"){
-    message.channel.send(csvData)
+    message.channel.send(csv)
   }
 
 
