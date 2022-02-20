@@ -7,7 +7,6 @@ const parse = require('csv-parser');
 const fs = require('fs');
 const csvData = [];
 var csv = [];
-var random = alé1
 var statue = "idle" //online
 bot.on('ready', function() {
   bot.user.setPresence({ game: { name: 'Test'}, status: `${statue}`})
@@ -35,7 +34,7 @@ fs.createReadStream('./folder/Dekuali.csv')
 bot.login(process.env.DISCORD_TOKEN);
 
 bot.on('message', message => {
-
+  var random = alé1
   function aléa1(min, max) {
     min = Math.ceil(0)
     max = Math.floor(3)
