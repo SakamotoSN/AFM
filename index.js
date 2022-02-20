@@ -47,7 +47,7 @@ bot.on('message', message => {
 
   if(message.content === "!date"){
   let date = JSON.stringify(text).split(`","`);
-  message.channel.send(JSON.stringify(date[0]).slice('4')) 
+  message.channel.send((JSON.stringify(date[0]).slice('15'))).substr('1')
   message.channel.send(JSON.stringify(date[1])) 
   message.channel.send(JSON.stringify(date[2]))
   message.channel.send(JSON.stringify(date[3]))
@@ -69,7 +69,6 @@ bot.on('message', message => {
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Some title')
-	.setURL('https://discord.js.org/')
 	.setAuthor('De ' + JSON.stringify(date[1]), 'https://i.imgur.com/AfFp7pu.png', 'https://discord.js.org')
 	.setDescription('Some description here')
 	.setThumbnail('https://i.imgur.com/AfFp7pu.png')
