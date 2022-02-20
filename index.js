@@ -24,13 +24,10 @@ fs.createReadStream('./folder/Dekuali.csv')
     csvData.push(dataRow);
   })
   .on('end', function () {
-    console.log("fichier importer");
+    console.log(csvData);
   });
 
-  console.log(dataRow[0]);             
-  console.log(dataRow[1]);
-  console.log(dataRow[2]);
-  console.log(dataRow[3]);
+
 
 bot.login(process.env.DISCORD_TOKEN);
 
