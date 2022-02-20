@@ -34,21 +34,24 @@ fs.createReadStream('./folder/Dekuali.csv')
 bot.login(process.env.DISCORD_TOKEN);
 
 bot.on('message', message => {
-  var random = alé1
-  function aléa1(min, max) {
-    min = Math.ceil(0)
-    max = Math.floor(3)
-    alé1 = Math.floor(Math.random() * (max - min +1) + min);
-    random = alé1
- }
 
-  var text = csv[random]//mess brute
+
+  //var text = csv[alé1]//mess brute
 
 
 
 
   if(message.content === "!tf"){
-    aléa1();
+    function random(min, max) {
+      min = Math.ceil(0)// 0 est impossible a avoir
+      max = Math.floor(10)
+      rdm = Math.floor(Math.random() * (max - min +1) + min);
+   }
+  random();
+
+
+  var text = csv[rdm]//mess brute
+
     
     let split = JSON.stringify(text).split(`","`);
     var ID = JSON.stringify(split[0]).slice('17','-1') 
