@@ -78,7 +78,7 @@ bot.on('message', message => {
 	.setAuthor('De ' + auteur)
 	.setDescription(mess)
 	.setImage(image)
-	.setFooter(date + "||" + ID);
+	.setFooter(date + " || " + ID);
 
   message.channel.send(embed)
 }
@@ -95,7 +95,7 @@ if(message.content === "!debug"){
   message.channel.send(ID)
   message.channel.send(auteur)
   message.channel.send(date)
-  message.channel.send(mess)
+  message.channel.send(mess.replace(`\r\n|\n|\r`), "\n");
   message.channel.send(image)
 }
 
