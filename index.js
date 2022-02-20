@@ -80,7 +80,7 @@ if(message.content === "!debug"){
       rdm = Math.floor(Math.random() * (max - min +1) + min);
    }
 random();
-
+console.log(rdm)
   var text = csv[rdm]//mess brute
 
   let split = JSON.stringify(text).split(`","`);
@@ -94,7 +94,7 @@ random();
   message.channel.send(ID)
   message.channel.send(auteur)
   message.channel.send(date)
-  message.channel.send(mess.replace(/\r?\n|\r/g, " "))
+  message.channel.send(mess.replace(/(\r\n|\n|\r)/gm, ''))
   //message.channel.send(image)
 }
 
