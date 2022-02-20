@@ -44,7 +44,7 @@ bot.on('message', message => {
 
 
 
-   message.channel.send(JSON.stringify(text[1]))  
+   message.channel.send(JSON.stringify(text + "test"))  
 
    //let args = text.split(",").slice(1)
 
