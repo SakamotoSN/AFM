@@ -40,7 +40,7 @@ bot.login(process.env.DISCORD_TOKEN);
 bot.on('message', message => {
 
   if(message.content === "!rdm"){
-  text = csv[0].slice();
+ let text = csv[0].slice();
 
 
 
