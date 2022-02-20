@@ -8,6 +8,7 @@ const fs = require('fs');
 const csvData = [];
 var csv = [];
 var statue = "idle" //online
+var prefix = ","
 bot.on('ready', function() {
   bot.user.setPresence({ game: { name: 'Test'}, status: `${statue}`})
     bot.user.setUsername("Quoifeur bot")
@@ -41,7 +42,7 @@ bot.on('message', message => {
 
 
 
-  if(message.content === "!tf"){
+  if(message.content === (prefix +"wtf".toLowerCase())){
     function random(min, max) {
       min = Math.ceil(0)
       max = Math.floor(csv.length - 1)
