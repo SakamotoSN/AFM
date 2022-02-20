@@ -6,7 +6,7 @@ const client = new Discord.Client();
 const parse = require('csv-parser');
 const fs = require('fs');
 const csvData = [];
-var csv = JSON.stringify(csvData);
+const csv = csvData;
 
 var statue = "idle" //online
 bot.on('ready', function() {
