@@ -55,7 +55,7 @@ bot.on('message', message => {
 //debug
 
 
-var text = csv[alea]//mess brute
+var text = csv[5]//mess brute
 
     let split = JSON.stringify(text).split(`","`);
     var ID = JSON.stringify(split[0]).slice('17','-1') 
