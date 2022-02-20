@@ -34,38 +34,20 @@ fs.createReadStream('./folder/Dekuali.csv')
 bot.login(process.env.DISCORD_TOKEN);
 
 bot.on('message', message => {
-  var text = csv[0]//mess brute
-
-
-
-  if(message.content === "!rdm"){
-   message.channel.send(JSON.stringify(text))  
-  }
-
-
-
-
-  if(message.content === "!date"){
-  let date = JSON.stringify(text).split(`","`);
-  message.channel.send(JSON.stringify(date[1])) 
-  message.channel.send(JSON.stringify(date[2]))
-  message.channel.send(JSON.stringify(date[3]))
-  message.channel.send(JSON.stringify(date[4]))
-  }
-
-
-
-
-
-
-
-
-
- 
-
-
+  
 
   if(message.content === "!tf"){
+    function random(min, max) {
+      min = Math.ceil(0)// 0 est impossible a avoir
+      max = Math.floor(10)
+      Random = Math.floor(Math.random() * (max - min +1) + min);
+   }
+
+
+
+
+var text = csv[Random]//mess brute
+
     let split = JSON.stringify(text).split(`","`);
     var ID = JSON.stringify(split[0]).slice('17','-1') 
     var auteur = JSON.stringify(split[1]).slice('12','-1')
@@ -76,7 +58,7 @@ bot.on('message', message => {
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setAuthor('De ' + auteur)
-	.setDescription(mess)
+	.setDescription(mess.replace(/(?:\\[rn]|[\r\n]+)+/g, "")).replace('\\', '\n\n')
 	.setImage(image)
 	.setFooter(date + " || " + ID);
 
