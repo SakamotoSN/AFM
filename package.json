@@ -21,7 +21,7 @@
     "opusscript": "^0.0.7",
     "simple-youtube-api": "^5.2.1",
     "uws": "^99.0.0",
-    "ytdl-core": "^2.1.4"
+    "ytdl-core": "^2.1.4",
     "csv-parser": "^3.0.0"
   },
   "repository": {
