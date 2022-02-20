@@ -69,7 +69,7 @@ bot.on('message', message => {
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Some title')
-	.setAuthor('De ' + JSON.stringify(date[1]), (JSON.stringify(date[0]).slice('16','-1')).author.avatarURL())
+	.setAuthor('De ' + JSON.stringify(date[1]), client.user.displayAvatarURL(JSON.stringify(date[0]).slice('16','-1')))
 	.setDescription('Some description here')
 	.setThumbnail('https://i.imgur.com/AfFp7pu.png')
 	.setImage('https://i.imgur.com/AfFp7pu.png')
