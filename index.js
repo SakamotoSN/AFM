@@ -49,7 +49,7 @@ bot.on('message', message => {
    message.channel.send(ID)
    message.channel.send(auteur)
    message.channel.send(date)
-   message.channel.send((mess.replace(/(?:\\[rn]|[\r\n]+)+/g, "")).replace('\\', '\n\n'))
+   message.channel.send((mess)//.replace(/(?:\\[rn]|[\r\n]+)+/g, "")).replace('\\', '\n\n'))
    //message.channel.send(image)
 //debug
 
