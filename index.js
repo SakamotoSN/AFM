@@ -54,6 +54,8 @@ console.log(rdm)
 
     
     let split = JSON.stringify(text).split(`","`);
+
+
     var ID = JSON.stringify(split[0]).slice('17','-1') 
     var auteur = JSON.stringify(split[1]).slice('12','-1')
     var date = JSON.stringify(split[2]).slice('10','-1')
@@ -72,11 +74,11 @@ console.log(rdm)
 
 if(message.content === "!debug"){
 
-  function random(min, max) {
-    min = Math.ceil(0)// 0 est impossible a avoir
-    max = Math.floor(10)
-    rdm = Math.floor(Math.random() * (max - min +1) + min);
- }
+    function random(min, max) {
+      min = Math.ceil(0)// 0 est impossible a avoir
+      max = Math.floor(csv[csv.length - 1])
+      rdm = Math.floor(Math.random() * (max - min +1) + min);
+   }
 random();
 
   var text = csv[rdm]//mess brute
