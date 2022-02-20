@@ -65,11 +65,16 @@ bot.on('message', message => {
 
 
   if(message.content === "!tf"){
-    let date = JSON.stringify(text).split(`","`);
+
+
+let date = JSON.stringify(text).split(`","`);
+var ID = JSON.stringify(date[0]).slice('16','-1')
+var PDP = bot.users.get(ID)
+
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Some title')
-	.setAuthor('De ' + JSON.stringify(date[1]), client.user.displayAvatarURL(JSON.stringify(date[0]).slice('16','-1')))
+	.setAuthor('De ' + JSON.stringify(date[1]),   PDP.avatarURL )
 	.setDescription('Some description here')
 	.setThumbnail('https://i.imgur.com/AfFp7pu.png')
 	.setImage('https://i.imgur.com/AfFp7pu.png')
