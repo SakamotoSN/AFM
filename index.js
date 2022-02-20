@@ -34,16 +34,8 @@ bot.login(process.env.DISCORD_TOKEN);
 bot.on('message', message => {
 
   if(message.content === "!ice-bot NotFunny"){
-    message.channel.send(csvData)
+    message.channel.send(dataRow)
   }
-
-
-
-  if(message.content === "!ice-bot NotFunny"){ 
-    message.channel.send({ 
-      files: ["https://cdn.glitch.com/df793cf6-f71f-4846-9616-877b6c1bd870%2FFeistyHeftyAmericanbobtail-max-1mb.gif?v=1590688129485"]
-  })
-}
 
 
 
