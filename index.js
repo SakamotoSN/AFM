@@ -33,6 +33,11 @@ bot.login(process.env.DISCORD_TOKEN);
 
 bot.on('message', message => {
 
+  if(message.content === "!ice-bot NotFunny"){
+    message.channel.send(csvData)
+  }
+
+
 
   if(message.content === "!ice-bot NotFunny"){ 
     message.channel.send({ 
