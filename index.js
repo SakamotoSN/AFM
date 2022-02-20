@@ -7,7 +7,7 @@ const parse = require('csv-parser');
 const fs = require('fs');
 const csvData = [];
 var csv = [];
-var Random = 0; 
+var alea = 0; 
 var statue = "idle" //online
 bot.on('ready', function() {
   bot.user.setPresence({ game: { name: 'Test'}, status: `${statue}`})
@@ -41,9 +41,8 @@ bot.on('message', message => {
     function random(min, max) {
       min = Math.ceil(0)// 0 est impossible a avoir
       max = Math.floor(10)
-      Random = Math.floor(Math.random() * (max - min +1) + min);
+      alea = Math.floor(Math.random() * (max - min +1) + min);
    }
-
 
 //debug
    message.channel.send(ID)
@@ -54,7 +53,7 @@ bot.on('message', message => {
 //debug
 
 
-var text = csv[Random]//mess brute
+var text = csv[alea]//mess brute
 
     let split = JSON.stringify(text).split(`","`);
     var ID = JSON.stringify(split[0]).slice('17','-1') 
