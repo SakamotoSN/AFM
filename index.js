@@ -43,8 +43,8 @@ bot.on('message', message => {
 
 
    let args = text.split(",").slice(1)
-   let result = args.join(",")
-   message.channel.send(`${result}`)  
+
+   message.channel.send(args[1])  
 
 
 
