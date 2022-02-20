@@ -47,7 +47,7 @@ bot.on('message', message => {
 
   if(message.content === "!date"){
   let date = JSON.stringify(text).split(`","`);
-  message.channel.send(JSON.stringify(date[0]).slice('16','-1'))
+  message.channel.send(ID)
   message.channel.send(JSON.stringify(date[1])) 
   message.channel.send(JSON.stringify(date[2]))
   message.channel.send(JSON.stringify(date[3]))
@@ -63,13 +63,12 @@ bot.on('message', message => {
 
 
 
+  var ID = JSON.stringify(split[0]).slice('17','-1')
+
+
 
   if(message.content === "!tf"){
-
-
-let split = JSON.stringify(text).split(`","`);
-var ID = JSON.stringify(split[0]).slice('17','-1')
-
+    let split = JSON.stringify(text).split(`","`);
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Some title')
