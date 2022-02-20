@@ -8,7 +8,7 @@ const fs = require('fs');
 const csvData = [];
 var csv = [];
 var statue = "idle" //online
-var prefix = ","
+var prefix = "²"
 bot.on('ready', function() {
   bot.user.setPresence({ game: { name: 'Test'}, status: `${statue}`})
     bot.user.setUsername("Quoifeur bot")
