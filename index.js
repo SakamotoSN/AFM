@@ -74,7 +74,7 @@ bot.on('message', message => {
 	.setDescription('Some description here')
 	.setThumbnail('https://i.imgur.com/AfFp7pu.png')
 	.setImage('https://i.imgur.com/AfFp7pu.png')
-	.setFooter(message.channel.send(JSON.stringify(date[3])));
+	.setFooter(JSON.stringify(date[3]));
 
   message.channel.send(embed)
 }
