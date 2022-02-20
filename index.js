@@ -43,7 +43,7 @@ bot.on('message', message => {
 
   if(message.content === "!tf"){
     function random(min, max) {
-      min = Math.ceil(0)// 0 est impossible a avoir
+      min = Math.ceil(0)
       max = Math.floor(csv.length - 1)
       rdm = Math.floor(Math.random() * (max - min +1) + min);
    }
@@ -65,7 +65,7 @@ console.log(rdm)
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setAuthor('De ' + auteur)
-	.setDescription((mess.replace(/(?:\\[rn]|[\r\n]+)+/g, "\n")).replace('\\', ""))
+	.setDescription((mess.replace(/(?:\\[rn]|[\r\n]+)+/g, "\n")).replace('\\', " "))
 	.setImage(image)
 	.setFooter(date + " || " + ID);
 
