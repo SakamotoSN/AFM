@@ -103,13 +103,12 @@ console.log(rdm)
   var date = JSON.stringify(split[2]).slice('10','-1')
   var mess = JSON.stringify(split[3]).slice('13','-1')
   var image = JSON.stringify(split[4]).slice('17','-1')
-  
-  var message = mess
+  var item = mess.replace(/[\n\r]/g, "AMOGUS");
 
   message.channel.send(ID)
   message.channel.send(auteur)
   message.channel.send(date)
-  message.channel.send(message.replace(/[\n\r]/g, "AMOGUS"))
+  message.channel.send(item)
   //message.channel.send(image)
 }
 
