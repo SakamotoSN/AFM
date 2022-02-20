@@ -38,13 +38,12 @@ bot.login(process.env.DISCORD_TOKEN);
 bot.on('message', message => {
 
   if(message.content === "!rdm"){
-   text = JSON.stringify(csv[0])
+   text = csv[0]
 
 
+   //let args = text.split(",").slice(1)
 
-   let args = text.split(",").slice(1)
-
-   message.channel.send(args[1])  
+   message.channel.send(text[1])  
 
 
 
