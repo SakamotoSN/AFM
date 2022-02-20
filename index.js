@@ -28,13 +28,13 @@ fs.createReadStream('./folder/Dekuali.csv')
   });
 
 
-
+  console.log("LOGIN")
 bot.login(process.env.DISCORD_TOKEN);
 
 bot.on('message', message => {
 
   if(message.content === "!ice-bot NotFunny"){
-    message.channel.send(dataRow)
+    message.channel.send(csvData)
   }
 
 
