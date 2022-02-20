@@ -76,7 +76,7 @@ if(message.content === "!debug"){
 
     function random(min, max) {
       min = Math.ceil(0)// 0 est impossible a avoir
-      max = Math.floor(csv[csv.length - 1])
+      max = Math.floor(10)
       rdm = Math.floor(Math.random() * (max - min +1) + min);
    }
 random();
