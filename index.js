@@ -45,6 +45,7 @@ bot.on('message', message => {
    }
    random();
 
+   console.log(alea);
 //debug
    message.channel.send(ID)
    message.channel.send(auteur)
