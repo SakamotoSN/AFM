@@ -26,7 +26,7 @@ fs.createReadStream('./folder/Dekuali.csv')
   })
   .on('end', function () {
     console.log("teste");
-    csvData = csv;
+    csv = csvData;
     console.log(csv);
 
   });
