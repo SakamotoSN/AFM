@@ -7,6 +7,7 @@ const parse = require('csv-parser');
 const fs = require('fs');
 const csvData = [];
 var csv = [];
+var Random = 0; 
 var statue = "idle" //online
 bot.on('ready', function() {
   bot.user.setPresence({ game: { name: 'Test'}, status: `${statue}`})
