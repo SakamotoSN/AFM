@@ -47,7 +47,6 @@ bot.on('message', message => {
 
   if(message.content === "!date"){
   let date = JSON.stringify(text).split(`","`);
-  message.channel.send(ID)
   message.channel.send(JSON.stringify(date[1])) 
   message.channel.send(JSON.stringify(date[2]))
   message.channel.send(JSON.stringify(date[3]))
@@ -62,17 +61,17 @@ bot.on('message', message => {
 
 
 
-  let split = JSON.stringify(text).split(`","`);
-  var ID = JSON.stringify(split[0]).slice('17','-1')
+ 
 
 
 
   if(message.content === "!tf"){
-    
+    let split = JSON.stringify(text).split(`","`);
+    var ID = JSON.stringify(split[0]).slice('17','-1') 
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Some title')
-	.setAuthor('De ' + JSON.stringify(split[1]),   ID.avatarURL )
+	.setAuthor('De '+ ID + JSON.stringify(split[1]),   ID.avatarURL )
 	.setDescription('Some description here')
 	.setImage('https://i.imgur.com/AfFp7pu.png')
 	.setFooter(JSON.stringify(split[2]));
