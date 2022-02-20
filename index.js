@@ -48,7 +48,7 @@ bot.on('message', message => {
       rdm = Math.floor(Math.random() * (max - min +1) + min);
    }
   random();
-
+console.log(rdm)
 
   var text = csv[rdm]//mess brute
 
