@@ -6,7 +6,7 @@ const client = new Discord.Client();
 const parse = require('csv-parser');
 const fs = require('fs');
 const csvData = [];
-const csv = csvData;
+var csv = [];
 
 var statue = "idle" //online
 bot.on('ready', function() {
@@ -25,7 +25,10 @@ fs.createReadStream('./folder/Dekuali.csv')
     csvData.push(dataRow);
   })
   .on('end', function () {
-    console.log(csvData);
+    console.log("teste");
+    csvData = csv;
+    console.log(csv);
+
   });
 
 
