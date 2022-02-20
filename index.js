@@ -65,7 +65,7 @@ bot.on('message', message => {
 
 
   if(message.content === "!tf"){
-
+    let date = JSON.stringify(text).split(`","`);
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Some title')
