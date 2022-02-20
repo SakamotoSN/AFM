@@ -79,7 +79,7 @@ if(message.content === "!debug"){
  }
 random();
 
-  var text = csv[alé1]//mess brute
+  var text = csv[rdm]//mess brute
 
   let split = JSON.stringify(text).split(`","`);
   var ID = JSON.stringify(split[0]).slice('17','-1') 
