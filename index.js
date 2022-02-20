@@ -67,14 +67,18 @@ bot.on('message', message => {
 
   if(message.content === "!tf"){
     let split = JSON.stringify(text).split(`","`);
-    var ID = JSON.stringify(split[0]).slice('17','-1') 
+    var ID = JSON.stringify(split[0]).slice('10','-1') 
+    var auteur = JSON.stringify(split[1]).slice('17','-1')
+    var date = JSON.stringify(split[2]).slice('8','-1')
+    var mess = JSON.stringify(split[3]).slice('11','-1')
+    var image = JSON.stringify(split[4]).slice('15','-1')
+
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
-	.setTitle('Some title')
-	.setAuthor('De '+ ID + JSON.stringify(split[1]),   ID.avatarURL )
-	.setDescription('Some description here')
-	.setImage('https://i.imgur.com/AfFp7pu.png')
-	.setFooter(JSON.stringify(split[2]));
+	.setAuthor('De ' + auteur)
+	.setDescription(mess)
+	.setImage(image)
+	.setFooter(date + "||" + ID);
 
   message.channel.send(embed)
 }
