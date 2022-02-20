@@ -62,19 +62,18 @@ bot.on('message', message => {
 
 
 
-
+  let split = JSON.stringify(text).split(`","`);
   var ID = JSON.stringify(split[0]).slice('17','-1')
 
 
 
   if(message.content === "!tf"){
-    let split = JSON.stringify(text).split(`","`);
+    
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setTitle('Some title')
 	.setAuthor('De ' + JSON.stringify(split[1]),   ID.avatarURL )
 	.setDescription('Some description here')
-	.setThumbnail('https://i.imgur.com/AfFp7pu.png')
 	.setImage('https://i.imgur.com/AfFp7pu.png')
 	.setFooter(JSON.stringify(split[2]));
 
