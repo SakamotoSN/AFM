@@ -7,7 +7,6 @@ const parse = require('csv-parser');
 const fs = require('fs');
 const csvData = [];
 var csv = [];
-var array = [];
 var statue = "idle" //online
 bot.on('ready', function() {
   bot.user.setPresence({ game: { name: 'Test'}, status: `${statue}`})
@@ -38,15 +37,15 @@ bot.login(process.env.DISCORD_TOKEN);
 bot.on('message', message => {
 
   if(message.content === "!rdm"){
-  var text = csv[0].split();
+  var text = csv[0]
+  // let args = text.split(":").slice(1)
 
+   //message.channel.send(args[1])  
 
 
    message.channel.send(JSON.stringify(text))  
 
-   //let args = text.split(",").slice(1)
-
-   //message.channel.send(args[1])  
+   
 
 
 
