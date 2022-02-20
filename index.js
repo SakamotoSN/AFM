@@ -6,6 +6,7 @@ const { MessageEmbed } = require('discord.js');
 const parse = require('csv-parser');
 const fs = require('fs');
 const csvData = [];
+var item = "";
 var csv = [];
 var statue = "idle" //online
 bot.on('ready', function() {
@@ -103,7 +104,7 @@ console.log(rdm)
   var date = JSON.stringify(split[2]).slice('10','-1')
   var mess = JSON.stringify(split[3]).slice('13','-1')
   var image = JSON.stringify(split[4]).slice('17','-1')
-  var item = mess.replace(/[\n\r]/g, "AMOGUS");
+  item = mess.replace(/[\n\r]/g, "AMOGUS");
 
   message.channel.send(ID)
   message.channel.send(auteur)
