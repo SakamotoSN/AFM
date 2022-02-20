@@ -7,6 +7,7 @@ const parse = require('csv-parser');
 const fs = require('fs');
 const csvData = [];
 var csv = [];
+var array = [];
 var statue = "idle" //online
 bot.on('ready', function() {
   bot.user.setPresence({ game: { name: 'Test'}, status: `${statue}`})
@@ -41,7 +42,7 @@ bot.on('message', message => {
 
 
 
-  var array = JSON.parse("[" + text + "]");
+  array = JSON.parse("[" + text + "]");
 
 
 
