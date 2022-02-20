@@ -43,6 +43,7 @@ bot.on('message', message => {
       max = Math.floor(10)
       alea = Math.floor(Math.random() * (max - min +1) + min);
    }
+   random();
 
 //debug
    message.channel.send(ID)
