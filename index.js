@@ -47,7 +47,11 @@ bot.on('message', message => {
 
   if(message.content === "!date"){
   let date = JSON.stringify(text).split(`","`);
+  message.channel.send(JSON.stringify(date[0])) 
   message.channel.send(JSON.stringify(date[1])) 
+  message.channel.send(JSON.stringify(date[2]))
+  message.channel.send(JSON.stringify(date[3]))
+  message.channel.send(JSON.stringify(date[4]))
   }
 
 
