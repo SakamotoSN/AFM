@@ -74,6 +74,12 @@ console.log(rdm)
 
 if(message.content === "!debug"){
 
+
+
+
+
+
+
     function random(min, max) {
       min = Math.ceil(0)// 0 est impossible a avoir
       max = Math.floor(csv.length - 1)
@@ -83,11 +89,30 @@ random();
 console.log(rdm)
   var text = csv[rdm]//mess brute
 
+
+
+
+r = rdm;
+  for (i=0; i < s.length; i++) {
+    if (s.charAt(i) != '\n' &&
+        s.charAt(i) != '\r' &&
+        s.charAt(i) != '\t') {
+      r += s.charAt(i);
+      }
+    }
+  return r;
+  }
+
+
+
+
+
+
   let split = JSON.stringify(text).split(`","`);
   var ID = JSON.stringify(split[0]).slice('17','-1') 
   var auteur = JSON.stringify(split[1]).slice('12','-1')
   var date = JSON.stringify(split[2]).slice('10','-1')
-  var mess = JSON.stringify(split[3]).slice('13','-1')
+  var mess = r;//JSON.stringify(split[3]).slice('13','-1')
   var image = JSON.stringify(split[4]).slice('17','-1')
 
 
