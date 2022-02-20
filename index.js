@@ -6,7 +6,9 @@ const client = new Discord.Client();
 const parse = require('csv-parser');
 const fs = require('fs');
 const csvData = [];
+const csvData2 = [];
 var csv = [];
+var csv2 = [];
 
 var statue = "idle" //online
 bot.on('ready', function() {
@@ -60,7 +62,7 @@ bot.on('message', message => {
 
 
 
-   message.channel.send(JSON.stringify(text[1]))  
+   message.channel.send(JSON.stringify(csv2[1]))  
 
    //let args = text.split(",").slice(1)
 
