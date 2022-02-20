@@ -40,7 +40,7 @@ bot.on('message', message => {
   if(message.content === "!rdm"){
   text = csv[0]
 
-  var array = JSON.parse("[" + text + "]");
+  var array = JSON.parse("[" + JSON.stringify(text) + "]");
 
    message.channel.send(JSON.stringify(array[1]))  
 
