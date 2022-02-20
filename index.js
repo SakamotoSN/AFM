@@ -94,7 +94,7 @@ console.log(rdm)
   message.channel.send(ID)
   message.channel.send(auteur)
   message.channel.send(date)
-  message.channel.send(mess.replaceAll("\r", "").replaceAll("\n", ""))
+  message.channel.send(mess.replace(/(?:\[rn])+/g, ""))
   //message.channel.send(image)
 }
 
