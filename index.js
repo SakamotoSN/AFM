@@ -95,8 +95,8 @@ if(message.content === "!debug"){
   message.channel.send(ID)
   message.channel.send(auteur)
   message.channel.send(date)
-  message.channel.send(mess.replace(/(\r\n|\n|\r)/gm,""));
-  message.channel.send(image)
+  message.channel.send(mess.replace(/\r\n/g,"\n"));
+  //message.channel.send(image)
 }
 
 
