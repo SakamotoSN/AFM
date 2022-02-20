@@ -39,7 +39,26 @@ bot.on('message', message => {
 
   if(message.content === "!rdm"){
   text = JSON.stringify(csv[0])
-  
+
+
+
+  fs.createReadStream(text)
+  .pipe(
+    parse({
+      delimiter: ','
+    })
+  )
+  .on('data', function (dataRow2) {
+    csvData.push(dataRow2);
+  })
+  .on('end', function () {
+    console.log("teste2");
+    csv2 = csvData2;
+    console.log(csv2);
+
+  });
+
+
 
    message.channel.send(JSON.stringify(text[1]))  
 
