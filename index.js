@@ -6,10 +6,8 @@ const client = new Discord.Client();
 const parse = require('csv-parser');
 const fs = require('fs');
 const csvData = [];
-const csvData2 = [];
 var csv = [];
-var csv2 = [];
-
+var text = [];
 var statue = "idle" //online
 bot.on('ready', function() {
   bot.user.setPresence({ game: { name: 'Test'}, status: `${statue}`})
@@ -40,7 +38,7 @@ bot.login(process.env.DISCORD_TOKEN);
 bot.on('message', message => {
 
   if(message.content === "!rdm"){
- let text = csv[0].slice();
+  text = csv[0]
 
 
 
