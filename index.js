@@ -68,7 +68,7 @@ bot.on('message', message => {
 
 
 let split = JSON.stringify(text).split(`","`);
-var ID = JSON.stringify(date[0]).slice('17','-1')
+var ID = JSON.stringify(split[0]).slice('17','-1')
 
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
