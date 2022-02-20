@@ -83,7 +83,21 @@ bot.on('message', message => {
   message.channel.send(embed)
 }
 
+if(message.content === "!debug"){
+  let split = JSON.stringify(text).split(`","`);
+  var ID = JSON.stringify(split[0]).slice('10','-1') 
+  var auteur = JSON.stringify(split[1]).slice('17','-1')
+  var date = JSON.stringify(split[2]).slice('8','-1')
+  var mess = JSON.stringify(split[3]).slice('11','-1')
+  var image = JSON.stringify(split[4]).slice('15','-1')
 
+
+  message.channel.send(ID)
+  message.channel.send(auteur)
+  message.channel.send(date)
+  message.channel.send(mess)
+  message.channel.send(image)
+}
 
 
 
