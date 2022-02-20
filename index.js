@@ -46,8 +46,8 @@ bot.on('message', message => {
 
 
   if(message.content === "!date"){
-  date = text.split(",").slice(2);//.join(" ");
-  message.channel.send(JSON.stringify(text)) 
+  let date = text.split(",").slice(2);//.join(" ");
+  message.channel.send(JSON.stringify(date)) 
   }
 
 
