@@ -26,9 +26,9 @@ fs.createReadStream('./folder/Dekuali.csv')
     csvData.push(dataRow);
   })
   .on('end', function () {
-    console.log("teste");
-    csv = csvData;
-    console.log(csv);
+    //console.log("teste");
+    //csv = csvData;
+    //console.log(csv);
 
   });
 
@@ -41,7 +41,26 @@ bot.on('message', message => {
   if(message.content === "!rdm"){
   text = csv[0]
 
-  array = JSON.parse("[" + JSON.stringify(text) + "]");
+
+  text
+  .pipe(
+    parse({
+      delimiter: ','
+    })
+  )
+  .on('data', function (dataRow) {
+    csvData.push(dataRow);
+  })
+  .on('end', function () {
+    console.log("teste");
+    csv = csvData;
+    console.log(csv);
+
+  });
+
+
+
+
 
    message.channel.send(JSON.stringify(array[1]))  
 
