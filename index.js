@@ -70,11 +70,11 @@ bot.on('message', message => {
 	.setColor('#0099ff')
 	.setTitle('Some title')
 	.setURL('https://discord.js.org/')
-	.setAuthor('Some name', 'https://i.imgur.com/AfFp7pu.png', 'https://discord.js.org')
+	.setAuthor('De ' + JSON.stringify(date[1]), 'https://i.imgur.com/AfFp7pu.png', 'https://discord.js.org')
 	.setDescription('Some description here')
 	.setThumbnail('https://i.imgur.com/AfFp7pu.png')
 	.setImage('https://i.imgur.com/AfFp7pu.png')
-	.setFooter(JSON.stringify(date[3]));
+	.setFooter(JSON.stringify(date[2]));
 
   message.channel.send(embed)
 }
