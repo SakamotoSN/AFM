@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 const client = new Discord.Client();
 
 
-const parse = require('csv-parse');
+const parse = require('csv-parser');
 const fs = require('fs');
 const csvData = [];
 
