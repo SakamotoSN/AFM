@@ -94,7 +94,7 @@ random();
   message.channel.send(ID)
   message.channel.send(auteur)
   message.channel.send(date)
-  message.channel.send(((mess.replace(/(?:\\[rn]|[\r\n]+)+/g, "")).replace('\\', '\n\n').replace('\\', "")))
+  message.channel.send(mess.replace(/\r?\n|\r/g, " "))
   //message.channel.send(image)
 }
 
