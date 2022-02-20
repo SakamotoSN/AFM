@@ -45,6 +45,13 @@ bot.on('message', message => {
    }
 
 
+//debug
+   message.channel.send(ID)
+   message.channel.send(auteur)
+   message.channel.send(date)
+   message.channel.send((mess.replace(/(?:\\[rn]|[\r\n]+)+/g, "")).replace('\\', '\n\n'))
+   //message.channel.send(image)
+//debug
 
 
 var text = csv[Random]//mess brute
@@ -59,28 +66,35 @@ var text = csv[Random]//mess brute
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setAuthor('De ' + auteur)
-	.setDescription(mess.replace(/(?:\\[rn]|[\r\n]+)+/g, "")).replace('\\', '\n\n')
+	.setDescription(mess.replace(/(?:\\[rn]|[\r\n]+)+/g, "").replace('\\', '\n\n'))
 	.setImage(image)
 	.setFooter(date + " || " + ID);
 
   message.channel.send(embed)
 }
 
-if(message.content === "!debug"){
-  let split = JSON.stringify(text).split(`","`);
-  var ID = JSON.stringify(split[0]).slice('17','-1') 
-  var auteur = JSON.stringify(split[1]).slice('12','-1')
-  var date = JSON.stringify(split[2]).slice('10','-1')
-  var mess = JSON.stringify(split[3]).slice('13','-1')
-  var image = JSON.stringify(split[4]).slice('17','-1')
 
 
-  message.channel.send(ID)
-  message.channel.send(auteur)
-  message.channel.send(date)
-  message.channel.send((mess.replace(/(?:\\[rn]|[\r\n]+)+/g, "")).replace('\\', '\n\n'))
-  //message.channel.send(image)
-}
+
+
+
+
+
+// if(message.content === "!debug"){
+//   let split = JSON.stringify(text).split(`","`);
+//   var ID = JSON.stringify(split[0]).slice('17','-1') 
+//   var auteur = JSON.stringify(split[1]).slice('12','-1')
+//   var date = JSON.stringify(split[2]).slice('10','-1')
+//   var mess = JSON.stringify(split[3]).slice('13','-1')
+//   var image = JSON.stringify(split[4]).slice('17','-1')
+
+
+//   message.channel.send(ID)
+//   message.channel.send(auteur)
+//   message.channel.send(date)
+//   message.channel.send((mess.replace(/(?:\\[rn]|[\r\n]+)+/g, "")).replace('\\', '\n\n'))
+//   //message.channel.send(image)
+// }
 
 
 
