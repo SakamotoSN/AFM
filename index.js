@@ -37,8 +37,17 @@ bot.login(process.env.DISCORD_TOKEN);
 
 bot.on('message', message => {
 
-  if(message.content === "!ice-bot NotFunny"){
-    message.channel.send(JSON.stringify(csv[0]))
+  if(message.content === "!rdm"){
+   text = JSON.stringify(csv[0])
+
+
+
+   let args = text.split(",").slice(1)
+   let result = args.join(",")
+   message.channel.send(`${result}`)  
+
+
+
   }
 
 
