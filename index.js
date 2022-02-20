@@ -34,42 +34,20 @@ fs.createReadStream('./folder/Dekuali.csv')
 bot.login(process.env.DISCORD_TOKEN);
 
 bot.on('message', message => {
-  var text = csv[3]//mess brute
 
+  function aléa1(min, max) {
+    min = Math.ceil(0)
+    max = Math.floor(3)
+    alé1 = Math.floor(Math.random() * (max - min +1) + min);
+ }
 
+  var text = csv[alé1]//mess brute
 
-  if(message.content === "!rdm"){
-   message.channel.send(JSON.stringify(text))  
-  }
-
-
-
-
-  if(message.content === "!date"){
-  let date = JSON.stringify(text).split(`","`);
-  message.channel.send(JSON.stringify(date[1])) 
-  message.channel.send(JSON.stringify(date[2]))
-  message.channel.send(JSON.stringify(date[3]))
-  message.channel.send(JSON.stringify(date[4]))
-  }
-
-
-
-
-
-
-
-
-
- 
 
 
 
   if(message.content === "!tf"){
-
-
-
-
+    alé1();
     
     let split = JSON.stringify(text).split(`","`);
     var ID = JSON.stringify(split[0]).slice('17','-1') 
