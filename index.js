@@ -7,6 +7,7 @@ const parse = require('csv-parser');
 const fs = require('fs');
 const csvData = [];
 var csv = [];
+var array = [];
 var text = [];
 var statue = "idle" //online
 bot.on('ready', function() {
@@ -40,7 +41,7 @@ bot.on('message', message => {
   if(message.content === "!rdm"){
   text = csv[0]
 
-  var array = JSON.parse("[" + JSON.stringify(text) + "]");
+  array = JSON.parse("[" + JSON.stringify(text) + "]");
 
    message.channel.send(JSON.stringify(array))  
 
