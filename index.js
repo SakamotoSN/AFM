@@ -100,7 +100,7 @@ if(message.content === "!debug"){
   message.channel.send(ID)
   message.channel.send(auteur)
   message.channel.send(date)
-  message.channel.send((mess.replace(/(?:\\[rn]|[\r\n]+)+/g, "")).replace('\\', '\n\n'))
+  message.channel.send(((mess.replace(/(?:\\[rn]|[\r\n]+)+/g, "")).replace('\\', '\n\n').replace('\\', "")))
   //message.channel.send(image)
 }
 
