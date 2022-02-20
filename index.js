@@ -42,7 +42,7 @@ bot.on('message', message => {
 
 
 
-  if(message.content === (prefix +"wtf".toLowerCase())){
+  if(message.content.toLowerCase() === (prefix + ("wtf"))){
     function random(min, max) {
       min = Math.ceil(0)
       max = Math.floor(csv.length - 1)
