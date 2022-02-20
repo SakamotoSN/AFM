@@ -92,17 +92,6 @@ console.log(rdm)
 
 
 
-r = rdm;
-  for (i=0; i < s.length; i++) {
-    if (s.charAt(i) != '\n' &&
-        s.charAt(i) != '\r' &&
-        s.charAt(i) != '\t') {
-      r += s.charAt(i);
-      }
-    }
-  return r;
-  }
-
 
 
 
@@ -112,14 +101,14 @@ r = rdm;
   var ID = JSON.stringify(split[0]).slice('17','-1') 
   var auteur = JSON.stringify(split[1]).slice('12','-1')
   var date = JSON.stringify(split[2]).slice('10','-1')
-  var mess = r;//JSON.stringify(split[3]).slice('13','-1')
+  var mess = JSON.stringify(split[3]).slice('13','-1')
   var image = JSON.stringify(split[4]).slice('17','-1')
 
 
   message.channel.send(ID)
   message.channel.send(auteur)
   message.channel.send(date)
-  message.channel.send(mess.replace(/(\r\n)/gm, "\n"))
+  message.channel.send(mess.replace(/[\n\r]/g, "\n"))
   //message.channel.send(image)
 }
 
