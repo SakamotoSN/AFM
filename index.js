@@ -44,7 +44,7 @@ bot.on('message', message => {
   if(message.content === "!tf"){
     function random(min, max) {
       min = Math.ceil(0)// 0 est impossible a avoir
-      max = Math.floor(csv[csv.length - 1])
+      max = Math.floor(csv.length - 1)
       rdm = Math.floor(Math.random() * (max - min +1) + min);
    }
   random();
@@ -76,7 +76,7 @@ if(message.content === "!debug"){
 
     function random(min, max) {
       min = Math.ceil(0)// 0 est impossible a avoir
-      max = Math.floor(10)
+      max = Math.floor(csv.length - 1)
       rdm = Math.floor(Math.random() * (max - min +1) + min);
    }
 random();
