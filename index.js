@@ -65,7 +65,7 @@ console.log(rdm)
     const embed = new MessageEmbed()
 	.setColor('#0099ff')
 	.setAuthor('De ' + auteur)
-	.setDescription(mess)         //replace(/(?:\\[rn]|[\r\n]+)+/g, "")).replace('\\', '\n\n').replace('\\', ""))
+	.setDescription(mess.replace(/(?:\\[rn]|[\r\n]+)+/g, "amogus"))
 	.setImage(image)
 	.setFooter(date + " || " + ID);
 
