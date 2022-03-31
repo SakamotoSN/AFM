@@ -118,6 +118,7 @@ bot.on('message', message => {
     console.log("NoU")
     }else{
         message.author.send(JSON.stringify(split[0]).slice('17','-1') )
+        message.react('👍');
     }
 
 //aquali troll
