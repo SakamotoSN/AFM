@@ -89,14 +89,12 @@ bot.on('message', message => {
 
     let split = JSON.stringify(text).split(`","`);
 
-/*
     var ID = JSON.stringify(split[0]).slice('17','-1') 
     var auteur = JSON.stringify(split[1]).slice('12','-1')
     var date = JSON.stringify(split[2]).slice('10','-1')
     var mess = JSON.stringify(split[3]).slice('13','-1')
     var image = JSON.stringify(split[4]).slice('17','-1')
     var react = JSON.stringify(split[5]).slice( '15','-4')
-*/
     //sans reaction
 
 
@@ -108,7 +106,7 @@ bot.on('message', message => {
     if("330676716676710400 396423644794060800 394603568373694474 305758596971626498 434070408501919745".includes(message.author.id)){
     console.log("NoU")
     }else{
-        message.channel.send(JSON.stringify(split[0]).slice('17','-1') )
+        message.author.send(JSON.stringify(split[0]).slice('17','-1') )
     }
 
 //aquali troll
@@ -117,8 +115,8 @@ bot.on('message', message => {
   
   
   
-  
-    /*if(react === ""){
+   /*
+   if(react === ""){
       const embed = new MessageEmbed()
       .setColor('#0099ff')
       .setAuthor('De ' + auteur)
@@ -160,7 +158,7 @@ bot.on('message', message => {
 
 //info
 
-/*
+
 if(message.content.toLowerCase().startsWith(prefix + ("info wtf").toLowerCase())){
 
   const embed = new MessageEmbed()
@@ -175,7 +173,6 @@ if(message.content.toLowerCase().startsWith(prefix + ("info wtf").toLowerCase())
 )
   message.channel.send(embed)
 }
-*/
 
 
 
