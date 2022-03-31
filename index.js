@@ -59,8 +59,7 @@ bot.on('message', message => {
 
 
     if(message.content.toLowerCase().startsWith === "ratio"){
-        message.react('🔥');
-	      message.react(':snowflake:');
+      message.react('👍')
 	    
     }
 
