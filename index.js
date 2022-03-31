@@ -59,7 +59,8 @@ bot.on('message', message => {
 
 
     if(message.content.toLowerCase().startsWith === "ratio"){
-      message.channel.react('👍')
+      const message = await message.fetchReply();
+      message.react('👍')
 	    
     }
 
