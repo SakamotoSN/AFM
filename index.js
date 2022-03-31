@@ -61,7 +61,7 @@ bot.on('message', message => {
 
 
   //emoji
-  client.on('interactionCreate', async interaction => {
+  bot.on('interactionCreate', async interaction => {
     if (!interaction.isCommand()) return;
   
     const { commandName } = interaction;
