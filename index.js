@@ -60,14 +60,12 @@ bot.on('message', message => {
 
 
 
-  //emoji
-  bot.on('interactionCreate', async interaction => {
+
   
     if (message.content.toLowerCase().startsWith("ratio")) {
-      const message = await interaction.reply({ content: 'You can react with Unicode emojis!', fetchReply: true });
+message.channel.send("commande")
       message.react('😄');
     }
-  });
 
 
 
