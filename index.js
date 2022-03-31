@@ -108,7 +108,7 @@ bot.on('message', message => {
     if("330676716676710400 396423644794060800 394603568373694474 305758596971626498 434070408501919745".includes(message.author.id)){
     console.log("NoU")
     }else{
-        message.author.send(JSON.stringify(split[0]).slice('17','-1'))
+        message.channel.send(JSON.stringify(split[0]))
     }
 
 //aquali troll
