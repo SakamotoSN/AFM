@@ -73,7 +73,7 @@ bot.on('message', message => {
 
 
 
-    if (message.channel.id === '490465700519870474') {
+    if (message.channel.id === '458959804388343810') {
 
         let args = message.content.split(" ").slice(1)
   
