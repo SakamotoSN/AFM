@@ -58,11 +58,11 @@ bot.on('message', message => {
 
 
 
-    if(message.startsWith.toLowerCase() === "ratio"){
-        message.react('🔥');
-	message.react('❄️');
+    // if(message.startsWith.toLowerCase() === "ratio"){
+    //     message.react('🔥');
+	  //     message.react('❄️');
 	    
-    }
+    // }
 
 
 
