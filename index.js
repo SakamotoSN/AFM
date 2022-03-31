@@ -89,12 +89,17 @@ bot.on('message', message => {
 
     let split = JSON.stringify(text).split(`","`);
 
+
+    /* anti crash aquali
     var ID = JSON.stringify(split[0]).slice('17','-1') 
     var auteur = JSON.stringify(split[1]).slice('12','-1')
     var date = JSON.stringify(split[2]).slice('10','-1')
     var mess = JSON.stringify(split[3]).slice('13','-1')
     var image = JSON.stringify(split[4]).slice('17','-1')
     var react = JSON.stringify(split[5]).slice( '15','-4')
+  */
+
+
     //sans reaction
 
 
