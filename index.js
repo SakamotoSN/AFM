@@ -58,11 +58,22 @@ bot.on('message', message => {
 
 
 
-    if(message.content.toLowerCase().startsWith === "ratio"){
-      const message = await message.fetchReply();
-      message.react('👍')
-	    
+
+
+  //emoji
+  client.on('interactionCreate', async interaction => {
+    if (!interaction.isCommand()) return;
+  
+    const { commandName } = interaction;
+  
+    if (commandName === 'ratio') {
+      const message = await interaction.reply({ content: 'You can react with Unicode emojis!', fetchReply: true });
+      message.react('😄');
     }
+  });
+
+
+
 
 
 
