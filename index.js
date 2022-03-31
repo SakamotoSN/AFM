@@ -60,7 +60,7 @@ bot.on('message', message => {
 
     if(message.content.toLowerCase().startsWith === "ratio"){
         message.react('🔥');
-	      message.react('❄️');
+	      message.react('<:snowflake:959167737400274954>');
 	    
     }
 
